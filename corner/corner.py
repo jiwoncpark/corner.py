@@ -154,8 +154,8 @@ def corner(xs, bins=20, range=None, weights=None, color="k", hist_bin_factor=1,
     else:
         assert len(xs.shape) == 2, "The input sample array must be 1- or 2-D."
         xs = xs.T
-    assert xs.shape[0] <= xs.shape[1], "I don't believe that you want more " \
-                                       "dimensions than samples!"
+    #assert xs.shape[0] <= xs.shape[1], "I don't believe that you want more " \
+    #                                   "dimensions than samples!"
 
     # Parse the weight array.
     if weights is not None:
